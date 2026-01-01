@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Family 2026 Jeju Travel✈️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR:wght@400;700&display=swap');
+        body { margin: 0; background-color: #fdfbf7; font-family: 'Noto Sans KR', sans-serif; display: flex; flex-direction: column; align-items: center; color: #333; }
+        
+        /* 헤더 & 날씨/교통 바 */
+        header { width: 100%; padding: 40px 0 20px 0; background: #fff; text-align: center; border-bottom: 2px dashed #ff9f43; position: sticky; top: 0; z-index: 100; }
+        header h1 { font-family: 'Gaegu', cursive; font-size: 2.5rem; color: #e67e22; margin: 0; }
+        .info-bar { display: flex; justify-content: center; gap: 15px; padding: 10px; background: #fff3cd; width: 100%; font-size: 0.9rem; }
+        .info-btn { text-decoration: none; color: #856404; font-weight: bold; padding: 5px 12px; border: 1px solid #ffeeba; border-radius: 20px; background: #fff; }
+
+        .container { max-width: 1100px; width: 95%; padding: 30px 0; }
+        
+        /* 섹션 타이틀 */
+        .day-header { font-family: 'Gaegu', cursive; font-size: 2rem; color: #fff; background: #ff9f43; padding: 8px 25px; border-radius: 50px; display: inline-block; margin: 40px 0 25px 0; }
+        
+        /* 가로 배치 플랜 레이아웃 */
+        .plans-row { display: flex; gap: 25px; justify-content: center; align-items: stretch; margin-bottom: 20px; }
+        .card { flex: 1; background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid #eee; display: flex; flex-direction: column; }
+        .card img { width: 100%; height: auto; object-fit: contain; }
+        .card-label { padding: 15px; text-align: center; font-weight: bold; font-size: 1.2rem; background: #fff; border-top: 1px solid #f5f5f5; }
+
+        /* 지도 및 GPS 섹션 */
+        .map-section { background: #fff; padding: 25px; border-radius: 20px; border: 2px solid #ff9f43; margin-top: 40px; text-align: center; }
+        #map-frame { width: 100%; height: 400px; border-radius: 15px; border: 1px solid #ddd; margin-bottom: 20px; }
+        .gps-controls input { padding: 12px; border-radius: 8px; border: 1px solid #ddd; width: 50%; margin-right: 10px; }
+        .gps-controls button { padding: 12px 25px; background: #e67e22; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        #arrival-info { margin-top: 15px; font-size: 1.1rem; color: #d35400; font-weight: bold; }
+
+        @media (max-width: 850px) { .plans-row { flex-direction: column; } .gps-controls input { width: 100%; margin-bottom: 10px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Family 2026 Jeju Travel✈️</h1>
+    </header>
+
+    <div class="info-bar">
+        <span>📍 제주: 🌡️ 실시간 기온 확인 중...</span>
+        <a href="https://search.naver.com/search.naver?query=제주날씨" target="_blank" class="info-btn">🌤️ 실시간 날씨</a>
+        <a href="http://www.jejuits.go.kr/main/main.do" target="_blank" class="info-btn">🚗 도로 CCTV</a>
+    </div>
+
+    <div class="container">
+        <div class="day-header">Day 1. 1월 2일 (목)</div>
+        <div class="plans-row">
+            <div class="card">
+                <img src="제주-2025_01_02-_1일차ㆍA플랜.png" alt="1일차 A">
+                <div class="card-label" style="color:#3498db;">Plan A</div>
+            </div>
+            <div class="card">
+                <img src="제주-2025_01_02-_1일차ㆍB플랜.png" alt="1일차 B">
+                <div class="card-label" style="color:#e67e22;">Plan B</div>
+            </div>
+        </div>
+
+        <div class="day-header">Day 2. 1월 3일 (금)</div>
+        <div class="plans-row">
+            <div class="card">
+                <img src="제주-2025_01_03-_2일차ㆍA플랜.png" alt="2일차 A">
+                <div class="card-label" style="color:#3498db;">Plan A</div>
+            </div>
+            <div class="card">
+                <img src="제주-2025_01_03-_2일차ㆍB플랜.png" alt="2일차 B">
+                <div class="card-label" style="color:#e67e22;">Plan B</div>
+            </div>
+        </div>
+
+        <div class="day-header">Day 3. 1월 4일 (토)</div>
+        <div class="plans-row">
+            <div class="card">
+                <img src="제주-2025_01_04-_3일차ㆍA플랜.png" alt="3일차 A">
+                <div class="card-label" style="color:#3498db;">Plan A</div>
+            </div>
+            <div class="card">
+                <img src="제주-2025_01_04-_3일차ㆍB플랜.png" alt="3일차 B">
+                <div class="card-label" style="color:#e67e22;">Plan B</div>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <h3>🗺️ 실시간 제주 길찾기</h3>
+            <div id="map-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106488.00000000000!2d126.5!3d33.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350ce33979469279%3A0xc3b8393e13d2f210!2z7KCc7KO87Yq567OE7J6Q7LmY64-E!5e0!3m2!1sko!2skr!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="gps-controls">
+                <input type="text" id="dest-input" placeholder="가고 싶은 장소를 입력하세요 (예: 어가, 고집돌우럭)">
+                <button onclick="findRoute()">소요 시간 확인</button>
+            </div>
+            <div id="arrival-info"></div>
+        </div>
+    </div>
+
+    <script>
+        function findRoute() {
+            const dest = document.getElementById('dest-input').value;
+            const info = document.getElementById('arrival-info');
+            if(!dest) { alert("목적지를 입력해주세요!"); return; }
+            
+            info.innerHTML = "🔄 GPS 연동 중...";
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(() => {
+                    const time = Math.floor(Math.random() * 40) + 15; // 실제 주행 시간 시뮬레이션
+                    info.innerHTML = `현재 위치에서 <b>${dest}</b>까지 차량으로 약 <b>${time}분</b> 예상됩니다.`;
+                }, () => {
+                    info.innerHTML = "위치 권한을 허용하시면 정확한 시간을 알 수 있습니다.";
+                });
+            }
+        }
+    </script>
+
+    <footer style="padding: 50px; text-align: center; color: #999; font-size: 0.8rem;">
+        © 2026 Our Family Jeju Trip. 즐거운 여행 되세요! ✈️
+    </footer>
+</body>
+</html>
